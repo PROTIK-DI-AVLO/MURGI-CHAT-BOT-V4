@@ -1,7 +1,7 @@
 const fs = require("fs-extra");
 const { utils } = global;
 
-const ADMIN_UID = "61563924155936";
+const ADMIN_UID = "61591412309835";
 
 module.exports = {
 	config: {
@@ -16,15 +16,15 @@ module.exports = {
 
 	langs: {
 		en: {
-			reset: "『 𝐏𝐑𝐄𝐅𝐈𝐗 𝐑𝐄𝐒𝐄𝐓 』\n\n✦ Prefix reset to default: %1\n\n➤ Action by: 𝗕𝗮𝗱𝗵𝗼𝗻",
-			onlyAdmin: "『 𝐀𝐂𝐂𝐄𝐒𝐒 𝐃𝐄𝐍𝐈𝐄𝐃 』\n\n✦ Only 𝗕𝗮𝗱𝗵𝗼𝗻 can change my prefix.",
+			reset: "『 𝐏𝐑𝐄𝐅𝐈𝐗 𝐑𝐄𝐒𝐄𝐓 』\n\n✦ Prefix reset to default: %1\n\n➤ Action by: PROTIK",
+			onlyAdmin: "『 𝐀𝐂𝐂𝐄𝐒𝐒 𝐃𝐄𝐍𝐈𝐄𝐃 』\n\n✦ OnlyPROTIK can change my prefix.",
 			confirmGlobal: "『 𝐂𝐎𝐍𝐅𝐈𝐑𝐌 𝐆𝐋𝐎𝐁𝐀𝐋 』\n\n✦ React to confirm system-wide prefix change",
 			confirmThisThread: "『 𝐂𝐎𝐍𝐅𝐈𝐑𝐌 𝐂𝐇𝐀𝐓 』\n\n✦ React to confirm chat prefix change",
-			successGlobal: "『 𝐆𝐋𝐎𝐁𝐀𝐋 𝐔𝐏𝐃𝐀𝐓𝐄 』\n\n✦ System prefix changed to: %1\n\n➤ Action by: 𝗕𝗮𝗱𝗵𝗼𝗻",
-			successThisThread: "『 𝐂𝐇𝐀𝐓 𝐔𝐏𝐃𝐀𝐓𝐄 』\n\n✦ Chat prefix changed to: %1\n\n➤ Action by: 𝗕𝗮𝗱𝗵𝗼𝗻",
-			myPrefix: "『 𝐌𝐄𝐋𝐈𝐒𝐒𝐀 𝐏𝐑𝐄𝐅𝐈𝐗 』\n\n✦ System Prefix: %1\n✦ Chat Prefix: %2\n\n『 𝐓𝐈𝐌𝐄 』\n› Date: %3\n› Day: %4\n› Time: %5\n\n『 𝐎𝐖𝐍𝐄𝐑 』\n➤ 𝗕𝗮𝗱𝗵𝗼𝗻",
+			successGlobal: "『 𝐆𝐋𝐎𝐁𝐀𝐋 𝐔𝐏𝐃𝐀𝐓𝐄 』\n\n✦ System prefix changed to: %1\n\n➤ Action by: PROTIK",
+			successThisThread: "『 𝐂𝐇𝐀𝐓 𝐔𝐏𝐃𝐀𝐓𝐄 』\n\n✦ Chat prefix changed to: %1\n\n➤ Action by: PROTIK",
+			myPrefix: "『 𝐌𝐄𝐋𝐈𝐒𝐒𝐀 𝐏𝐑𝐄𝐅𝐈𝐗 』\n\n✦ System Prefix: %1\n✦ Chat Prefix: %2\n\n『 𝐓𝐈𝐌𝐄 』\n› Date: %3\n› Day: %4\n› Time: %5\n\n『 𝐎𝐖𝐍𝐄𝐑 』\n➤ PROTIK",
 			invalidPrefix: "『 𝐈𝐍𝐕𝐀𝐋𝐈𝐃 』\n\n✦ Invalid prefix! Max 5 characters",
-			systemReset: "『 𝐒𝐘𝐒𝐓𝐄𝐌 𝐑𝐄𝐒𝐄𝐓 』\n\n✦ System prefix reset to default: %1\n\n➤ Action by: 𝗕𝗮𝗱𝗵𝗼𝗻"
+			systemReset: "『 𝐒𝐘𝐒𝐓𝐄𝐌 𝐑𝐄𝐒𝐄𝐓 』\n\n✦ System prefix reset to default: %1\n\n➤ Action by: PROTIK"
 		}
 	},
 
@@ -76,7 +76,7 @@ module.exports = {
 
 		const confirmMessage = args[1] === "-g" ? getLang("confirmGlobal") : getLang("confirmThisThread");
 
-		return message.reply(`${confirmMessage}\n\n『 𝐍𝐄𝐖 𝐏𝐑𝐄𝐅𝐈𝐗 』\n✦ ${newPrefix}\n\n『 𝐓𝐈𝐌𝐄 』\n› Date: ${date}\n› Day: ${day}\n› Time: ${time}\n\n『 𝐀𝐃𝐌𝐈𝐍 』\n➤ 𝗕𝗮𝗱𝗵𝗼𝗻\n\n✦ React to confirm ✦`, async (err, info) => {
+		return message.reply(`${confirmMessage}\n\n『 𝐍𝐄𝐖 𝐏𝐑𝐄𝐅𝐈𝐗 』\n✦ ${newPrefix}\n\n『 𝐓𝐈𝐌𝐄 』\n› Date: ${date}\n› Day: ${day}\n› Time: ${time}\n\n『 𝐀𝐃𝐌𝐈𝐍 』\n➤ PROTIK\n\n✦ React to confirm ✦`, async (err, info) => {
 			formSet.messageID = info.messageID;
 			global.GoatBot.onReaction.set(info.messageID, formSet);
 			try { await message.unsend(event.messageID); } catch (e) {}
